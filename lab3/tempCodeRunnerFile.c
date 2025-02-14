@@ -1,2 +1,2 @@
 
-        else if(c==EOF){
+        }

@@ -1,0 +1,2 @@
+printf("sajan ")
+scanf("dsklfjsd")

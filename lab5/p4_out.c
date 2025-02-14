@@ -1,0 +1,2 @@
+WRITE("sajan ")
+READ("dsklfjsd")

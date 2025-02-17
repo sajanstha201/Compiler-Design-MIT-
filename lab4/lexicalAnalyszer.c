@@ -5,16 +5,16 @@
 #define RET_LEN 7
 #define TOKEN_BUFFER_SIZE 5
 char *return_type[]={"char","int","void","float","double","void","long"};
-Token* createNewToken(char *lexemeName, int size, TokenType token_type, Scope scope,OperatorType op_type){
-    Token *node=(Token*)malloc(sizeof(Token));
-    strcpy(node->lexemeName,lexemeName);
-    node->type=token_type;
-    node->size=size;
-    node->scope=scope;
-    node->operator_type=op_type;
-    node->next=NULL;
-    return node;
-}
+// Token* createNewToken(char *lexemeName, int size, TokenType token_type, Scope scope,OperatorType op_type){
+//     Token *node=(Token*)malloc(sizeof(Token));
+//     strcpy(node->lexemeName,lexemeName);
+//     node->type=token_type;
+//     node->size=size;
+//     node->scope=scope;
+//     node->operator_type=op_type;
+//     node->next=NULL;
+//     return node;
+// }
 int parseInt(char *str){
     int k=0;
     for(int i=0;i<strlen(str);i++)
@@ -65,7 +65,6 @@ bool addNode(Token* root, Token*node){
     if(!findNode(root,node))
         return false;
     node->id=findLength(root);
-    printf("ldskfjasd\n");
     Token* temp=root;
     while(temp->next!=NULL)
         temp=temp->next;
@@ -84,12 +83,12 @@ bool isReturnType(Token t){
         return true;
     return false;
 }
-void printBuf(Token buf[TOKEN_BUFFER_SIZE]){
-    for(int i=0;i<TOKEN_BUFFER_SIZE;i++){
-        printf("%s\t",buf[i].lexemeName);
-    }
-    printf("\n");
-}
+// void printBuf(Token buf[TOKEN_BUFFER_SIZE]){
+//     for(int i=0;i<TOKEN_BUFFER_SIZE;i++){
+//         printf("%s\t",buf[i].lexemeName);
+//     }
+//     printf("\n");
+// }
 bool isFunction(Token buf[TOKEN_BUFFER_SIZE]){
     if(isReturnType(buf[0])&&((buf[1].type==IDENTIFIER)||(strcmp(buf[1].lexemeName,"main")==0))&&(strcmp(buf[2].lexemeName,"(")==0))
         return true;
@@ -130,7 +129,7 @@ int main(){
             tables[k]=createNewNode(buf);
         }
         updateBuf(buf,buffer,&start,&end);
-        printBuf(buf);
+        // printBuf(buf);
         if(k!=-1){
             if(buf[1].type==IDENTIFIER&&!isCallFunction(buf)){
                 addNode(tables[k],createNewNode(buf));

@@ -352,8 +352,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 4
-#define YY_END_OF_BUFFER 5
+#define YY_NUM_RULES 10
+#define YY_END_OF_BUFFER 11
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -361,28 +361,29 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[18] =
+static const flex_int16_t yy_accept[29] =
     {   0,
-        0,    0,    5,    3,    4,    3,    3,    0,    0,    0,
-        0,    0,    0,    0,    2,    1,    0
+        0,    0,   11,    9,    7,    1,    6,    9,    9,    8,
+        8,    8,    8,    0,    0,    0,    8,    8,    8,    8,
+        5,    5,    8,    3,    8,    4,    2,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
+        1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    3,    1,    4,    1,
+        1,    4,    1,    1,    1,    1,    1,    1,    1,    5,
+        5,    1,    1,    5,    6,    1,    1,    7,    7,    7,
+        7,    7,    7,    7,    7,    7,    7,    1,    5,    1,
+        5,    1,    1,    1,    8,    8,    8,    8,    8,    8,
+        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
+        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
+        1,    1,    1,    1,    1,    1,    9,    8,   10,    8,
 
-        1,    5,    1,    1,    6,    1,    1,    1,    1,    7,
-        1,    8,    1,    9,   10,   11,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        8,    8,    8,   11,   12,    8,    8,    8,   13,   14,
+        8,    8,    8,   15,    8,   16,    8,    8,    8,    8,
+        8,    8,    5,    1,    5,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -399,38 +400,44 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[12] =
+static const YY_CHAR yy_meta[17] =
+    {   0,
+        1,    1,    2,    1,    1,    1,    1,    3,    3,    3,
+        3,    3,    3,    3,    3,    3
+    } ;
+
+static const flex_int16_t yy_base[31] =
+    {   0,
+        0,    0,   35,   36,   36,   36,   36,   27,   26,    0,
+       21,   17,   21,   22,   21,   20,    0,   17,    9,   12,
+       16,   15,    6,    0,    6,    0,    0,   36,   16,   15
+    } ;
+
+static const flex_int16_t yy_def[31] =
+    {   0,
+       28,    1,   28,   28,   28,   28,   28,   28,   29,   30,
+       30,   30,   30,   29,   28,   29,   30,   30,   30,   30,
+       28,   29,   30,   30,   30,   30,   30,    0,   28,   28
+    } ;
+
+static const flex_int16_t yy_nxt[53] =
+    {   0,
+        4,    5,    6,    5,    7,    8,    9,   10,   10,   11,
+       10,   12,   13,   10,   10,   10,   15,   17,   15,   27,
+       26,   22,   21,   25,   24,   23,   22,   21,   16,   20,
+       19,   18,   16,   14,   28,    3,   28,   28,   28,   28,
+       28,   28,   28,   28,   28,   28,   28,   28,   28,   28,
+       28,   28
+    } ;
+
+static const flex_int16_t yy_chk[53] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1
-    } ;
-
-static const flex_int16_t yy_base[19] =
-    {   0,
-        0,    9,   21,   22,   22,   11,   14,   10,   12,    7,
-        6,    1,    1,    0,   22,   22,   22,    0
-    } ;
-
-static const flex_int16_t yy_def[19] =
-    {   0,
-       18,   18,   17,   17,   17,   17,   17,   17,   17,   17,
-       17,   17,   17,   17,   17,   17,    0,   17
-    } ;
-
-static const flex_int16_t yy_nxt[34] =
-    {   0,
-        4,    5,   17,   17,   16,   15,   17,    6,   17,    7,
-        5,   14,   13,   12,   11,   10,    6,    9,    7,    8,
-       17,    3,   17,   17,   17,   17,   17,   17,   17,   17,
-       17,   17,   17
-    } ;
-
-static const flex_int16_t yy_chk[34] =
-    {   0,
-       18,    1,    0,    0,   14,   13,    0,    1,    0,    1,
-        2,   12,   11,   10,    9,    8,    2,    7,    2,    6,
-        3,   17,   17,   17,   17,   17,   17,   17,   17,   17,
-       17,   17,   17
+        1,    1,    1,    1,    1,    1,   29,   30,   29,   25,
+       23,   22,   21,   20,   19,   18,   16,   15,   14,   13,
+       12,   11,    9,    8,    3,   28,   28,   28,   28,   28,
+       28,   28,   28,   28,   28,   28,   28,   28,   28,   28,
+       28,   28
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -447,11 +454,29 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "program4.l"
-#line 2 "program4.l"
-    int num_p=0,num_s=0;
-#line 453 "lex.yy.c"
-#line 454 "lex.yy.c"
+#line 1 "program1.l"
+#line 2 "program1.l"
+    #include<stdio.h>
+    #include<stdlib.h>
+    #include<string.h>
+    #include<stdbool.h>
+    typedef enum{MAIN,INT,CHAR,ID,NUM,SPE} TokenType;
+    int row=0,col=0;
+    typedef struct t{
+        char lexemeName[100];
+        TokenType type;
+        int row,col;
+        struct t *next;
+    } Token;
+    Token *root=NULL;
+    void Program();
+    void declarations();
+    void dataType();
+    void identifierList();
+    void assignStat();
+    void createToken(char *lexemeName,TokenType type,int row, int col);
+#line 478 "lex.yy.c"
+#line 479 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -668,9 +693,9 @@ YY_DECL
 		}
 
 	{
-#line 4 "program4.l"
+#line 22 "program1.l"
 
-#line 673 "lex.yy.c"
+#line 698 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -697,13 +722,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 18 )
+				if ( yy_current_state >= 29 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 22 );
+		while ( yy_base[yy_current_state] != 36 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -728,32 +753,57 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
+/* rule 1 can match eol */
 YY_RULE_SETUP
-#line 5 "program4.l"
-{
-    fprintf(yyout,"%s","WRITE");
-    num_p++;
-}
+#line 23 "program1.l"
+{row++;col=0;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 9 "program4.l"
-{
-    fprintf(yyout,"%s","READ");
-    num_s++;
-}
+#line 24 "program1.l"
+{createToken("main",MAIN,row,col);col+=4;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "program4.l"
-{fputc(yytext[0],yyout);}
+#line 25 "program1.l"
+{createToken("int",INT,row,col);col+=3;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "program4.l"
+#line 26 "program1.l"
+{createToken("char",CHAR,row,col);col+=4;}
+	YY_BREAK
+case 5:
+YY_RULE_SETUP
+#line 27 "program1.l"
+{createToken(yytext,NUM,row,col);col+=strlen(yytext);}
+	YY_BREAK
+case 6:
+YY_RULE_SETUP
+#line 28 "program1.l"
+{createToken(yytext,SPE,row,col);col+=1;}
+	YY_BREAK
+case 7:
+YY_RULE_SETUP
+#line 29 "program1.l"
+{col++;}
+	YY_BREAK
+case 8:
+YY_RULE_SETUP
+#line 30 "program1.l"
+{createToken(yytext,ID,row,col);col+=strlen(yytext);}
+	YY_BREAK
+case 9:
+YY_RULE_SETUP
+#line 31 "program1.l"
+{createToken(yytext,ID,row,col);col+=strlen(yytext);}
+	YY_BREAK
+case 10:
+YY_RULE_SETUP
+#line 32 "program1.l"
 ECHO;
 	YY_BREAK
-#line 756 "lex.yy.c"
+#line 806 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1050,7 +1100,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 18 )
+			if ( yy_current_state >= 29 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1078,11 +1128,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 18 )
+		if ( yy_current_state >= 29 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 17);
+	yy_is_jam = (yy_current_state == 28);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1758,13 +1808,111 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 14 "program4.l"
+#line 32 "program1.l"
 
 int yywrap(){return 1;}
+void match(Token *t){
+    root=root->next;
+}
+void invalid(Token *t,char *error_message){
+    printf("Error: error in %d line\n%s\n",t->row,error_message);
+    exit(0);
+}
+void Program(){
+    if(root->type==MAIN){
+        match(root);
+        if(strcmp(root->lexemeName,"(")==0){
+            match(root);
+            if(strcmp(root->lexemeName,")")==0){
+                match(root);
+                if(strcmp(root->lexemeName,"{")==0){
+                    match(root);
+                    declarations();
+                    assignStat();
+                    if(strcmp(root->lexemeName,"}")==0)
+                        return;
+                    else
+                        invalid(root,"} is not declared\n");
+                }
+                else invalid(root,"{ is not declared\n");
+            }
+            else invalid(root,") is not declared\n");
+        }
+        else invalid(root,"( is not declared\n");
+    }
+    else invalid(root,"main is not declared\n");
+}
+void declarations(){
+    if(root->type==CHAR||root->type==INT){
+        dataType();
+        identifierList();
+        if(strcmp(root->lexemeName,";")==0){
+            match(root);
+            declarations();
+        }
+        else invalid(root,"; is missing\n");
+    }
+    return;
+}
+void dataType(){
+    if(root->type==CHAR||root->type==INT)
+        match(root);
+}
+void identifierList(){
+    if(root->type==ID){
+        match(root);
+        if(strcmp(root->lexemeName,",")==0){
+            match(root);
+            identifierList();
+        }
+        else return;
+    }
+    else invalid(root,"wrong declaration of identifier\n");
+}
+void assignStat(){
+    if(root->type==ID){
+        match(root);
+        if(strcmp(root->lexemeName,"=")==0){
+            match(root);
+            if(root->type==ID){
+                match(root);
+                if(strcmp(root->lexemeName,";")==0)
+                    match(root);
+                else invalid(root,"; missing\n");
+            }
+            else if(root->type==NUM){
+                match(root);
+                if(strcmp(root->lexemeName,";")==0)
+                    match(root);
+                else invalid(root,"; missing\n");
+            }
+            else invalid(root,"wrong while assignment\n");
+        }
+        else invalid(root,"wrong or missing =\n");
+
+    }
+    else invalid(root,"wrong assignment\n");
+}
+void createToken(char *lexemeName,TokenType type,int row, int col){
+    Token *newToken=(Token*)malloc(sizeof(Token));
+    strcpy(newToken->lexemeName,lexemeName);
+    newToken->type=type;
+    newToken->row=row;
+    newToken->col=col;
+    newToken->next=NULL;
+    if(root==NULL)
+        root=newToken;
+    else{
+        Token*temp=root;
+        while(temp->next!=NULL)
+            temp=temp->next;
+        temp->next=newToken;
+    }
+}
 int main(){
-    yyin=fopen("text.c","r");
-    yyout=fopen("p4_out.c","w+");
+    int row=0,col=0;
+    yyin=fopen("c1.c","r");
     yylex();
-    printf("Number of fprintf: %d\n Number of fscanf: %d\n",num_p,num_s);
-    return 0;
+    Program();
+    printf("No error found\n");
 }

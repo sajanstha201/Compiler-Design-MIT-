@@ -19,5 +19,5 @@ int yywrap(){
 int main(){
     yyin=fopen("text.c","r");
     yylex();
-    printf("Number of words: %d\n Number of Char: %d\n Number of Blanks: %d\n Number of Lines: %d\n",num_words,num_char,num_blanks,num_lines);
+    printf("\nNumber of words: %d\n Number of Char: %d\n Number of Blanks: %d\n Number of Lines: %d\n",num_words,num_char,num_blanks,num_lines);
 }

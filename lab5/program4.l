@@ -17,6 +17,6 @@ int main(){
     yyin=fopen("text.c","r");
     yyout=fopen("p4_out.c","w+");
     yylex();
-    printf("Number of fprintf: %d\n Number of fscanf: %d\n",num_p,num_s);
+    printf("Number of printf: %d\n Number of scanf: %d\n",num_p,num_s);
     return 0;
 }

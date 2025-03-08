@@ -14,8 +14,7 @@ int yywrap(){
 }
 int main(){
     yyin=fopen("text.c","r");
-    yyout=stdout;
     yylex();
-    printf("Vowel Number: %d\nConsonant Number: %d\n",num_vow,num_const);
+    printf("\nVowel Number: %d\nConsonant Number: %d\n",num_vow,num_const);
     return 0;
 }

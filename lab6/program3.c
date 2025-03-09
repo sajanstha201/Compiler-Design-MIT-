@@ -32,7 +32,7 @@ void A(){
         curr++;
     else{
         A();
-        if(buffer[curr]=='a')
+        if(buffer[curr]=='b')
             curr++;
         else
             invalid();

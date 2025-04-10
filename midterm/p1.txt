@@ -1,0 +1,3 @@
+printf("sajan shrestah");
+scanf("dslkfj");
+printf

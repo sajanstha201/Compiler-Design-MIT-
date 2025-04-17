@@ -308,7 +308,7 @@ void createToken(char *lexemeName,TokenType type,int row, int col){
     }
 }
 int main(){
-    yyin=fopen("c1.c","r");
+    yyin=fopen("c2.c","r");
     yylex();
     //createToken("main",MAIN,row,col);
     createToken("END",END,row,col);

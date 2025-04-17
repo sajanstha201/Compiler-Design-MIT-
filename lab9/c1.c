@@ -1,7 +1,9 @@
 main(){
     int b,c;
-
-    for(b=0;i<5;c=3){
-        b=c;
+    if(4>5){
+        b=5;
+    }
+    else{
+        b=7
     }
 }

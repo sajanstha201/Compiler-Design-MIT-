@@ -352,8 +352,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 15
-#define YY_END_OF_BUFFER 16
+#define YY_NUM_RULES 18
+#define YY_END_OF_BUFFER 19
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -361,12 +361,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[40] =
+static const flex_int16_t yy_accept[29] =
     {   0,
-        0,    0,   16,   14,   12,    1,   14,    9,   11,    8,
-        8,   14,    7,   11,    7,   13,   13,   13,   13,   13,
-        7,    0,    0,   10,   13,   13,   13,    3,   13,   13,
-       10,   13,   13,    5,   13,    6,    4,    2,    0
+        0,    0,   19,   17,   16,   15,    5,    6,    9,    7,
+        8,   10,   14,   11,   12,   13,   13,   13,    3,    4,
+       16,   14,   13,   13,    1,   13,    2,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -374,17 +373,17 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    4,    5,    1,    1,    1,    6,    1,    1,    7,
-        8,    9,   10,   11,   12,    1,   13,   14,   14,   14,
-       14,   14,   14,   14,   14,   14,   14,    1,   15,   16,
-       17,   18,    1,    1,   19,   19,   19,   19,   19,   19,
-       19,   19,   19,   19,   19,   19,   19,   19,   19,   19,
-       19,   19,   19,   19,   19,   19,   19,   19,   19,   19,
-       20,    1,   21,    1,    1,    1,   22,   19,   23,   19,
+        1,    2,    1,    1,    1,    1,    1,    1,    1,    4,
+        5,    6,    7,    1,    8,    1,    9,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,    1,    2,   11,
+        1,   12,    1,    1,   13,   13,   13,   13,   13,   13,
+       13,   13,   13,   13,   13,   13,   13,   13,   13,   13,
+       13,   13,   13,   13,   13,   13,   13,   13,   13,   13,
+        1,    1,    1,    1,    1,    1,   13,   13,   13,   13,
 
-       24,   25,   19,   26,   27,   19,   19,   28,   29,   30,
-       19,   19,   19,   31,   32,   33,   19,   19,   19,   19,
-       19,   19,   34,    1,   35,    1,    1,    1,    1,    1,
+       14,   15,   13,   13,   16,   13,   13,   17,   13,   13,
+       13,   13,   13,   13,   18,   13,   13,   13,   13,   13,
+       13,   13,   19,    1,   20,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -401,60 +400,44 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[36] =
+static const YY_CHAR yy_meta[21] =
     {   0,
-        1,    1,    2,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    3,    1,
-        1,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    1,    1
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
+        1,    1,    2,    2,    2,    2,    2,    2,    1,    1
     } ;
 
-static const flex_int16_t yy_base[42] =
+static const flex_int16_t yy_base[30] =
     {   0,
-        0,    0,   61,   62,   62,   62,   43,   62,   62,   62,
-       45,   44,   40,   39,   38,    0,   28,   25,   11,   30,
-       62,   37,   36,   35,    0,   26,   15,    0,   13,   18,
-       29,    9,   15,    0,    8,    0,    0,    0,   62,   41,
-       34
+        0,    0,   30,   31,   27,   31,   31,   31,   31,   31,
+       31,   31,   18,   31,   31,    0,   10,   11,   31,   31,
+       23,   14,    0,    5,    0,    8,    0,   31,   19
     } ;
 
-static const flex_int16_t yy_def[42] =
+static const flex_int16_t yy_def[30] =
     {   0,
-       39,    1,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   40,   39,   39,   39,   41,   41,   41,   41,   41,
-       39,   40,   39,   40,   41,   41,   41,   41,   41,   41,
-       39,   41,   41,   41,   41,   41,   41,   41,    0,   39,
-       39
+       28,    1,   28,   28,   28,   28,   28,   28,   28,   28,
+       28,   28,   28,   28,   28,   29,   29,   29,   28,   28,
+       28,   28,   29,   29,   29,   29,   29,    0,   28
     } ;
 
-static const flex_int16_t yy_nxt[98] =
+static const flex_int16_t yy_nxt[52] =
     {   0,
-        4,    5,    6,    5,    7,    8,    9,    9,    8,   10,
-        9,   11,    8,   12,    9,   13,   14,   15,   16,    9,
-        9,   16,   17,   18,   16,   16,   19,   16,   20,   16,
-       16,   16,   16,    9,    9,   28,   25,   38,   37,   36,
-       29,   23,   31,   23,   35,   34,   33,   32,   24,   31,
-       24,   30,   27,   26,   21,   21,   21,   24,   22,   21,
-       39,    3,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39
-
+        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
+       14,   15,   16,   17,   16,   18,   16,   16,   19,   20,
+       23,   27,   26,   22,   21,   25,   24,   22,   21,   28,
+        3,   28,   28,   28,   28,   28,   28,   28,   28,   28,
+       28,   28,   28,   28,   28,   28,   28,   28,   28,   28,
+       28
     } ;
 
-static const flex_int16_t yy_chk[98] =
+static const flex_int16_t yy_chk[52] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,   19,   41,   35,   33,   32,
-       19,   40,   31,   40,   30,   29,   27,   26,   24,   23,
-       22,   20,   18,   17,   15,   14,   13,   12,   11,    7,
-        3,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39
-
+       29,   26,   24,   22,   21,   18,   17,   13,    5,    3,
+       28,   28,   28,   28,   28,   28,   28,   28,   28,   28,
+       28,   28,   28,   28,   28,   28,   28,   28,   28,   28,
+       28
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -471,42 +454,12 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "p1.l"
-#line 2 "p1.l"
-    #include<stdio.h>
-    #include<stdlib.h>
-    #include<string.h>
-    typedef enum{MAIN,INT,CHAR,ID,NUM,SPE,RELOP,ADDLOP,MUL,END,IF,ELSE} TokenType;
-    int row=0,col=0;
-    typedef struct t{
-        char lexemeName[100];
-        TokenType type;
-        int row,col;
-        struct t *next;
-    } Token;
-    Token *root=NULL;
-    void createToken(char *lexemeName,TokenType type,int row, int col);
-    void Program();
-    void declarations();
-    void dataType();
-    void identifierList();
-    void statementList();
-    void statement();
-    void assignStat();
-    void exp();
-    void simpleExp();
-    void ePrime();
-    void relop();
-    void term();
-    void sePrime();
-    void factor();
-    void tPrime();
-    void mulop();
-    void addlop();
-    void decisionStat();
-    void dprime();
-#line 508 "lex.yy.c"
-#line 509 "lex.yy.c"
+#line 1 "program.l"
+#line 2 "program.l"
+#include <stdio.h>
+#include "program.tab.h"
+#line 461 "lex.yy.c"
+#line 462 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -723,9 +676,9 @@ YY_DECL
 		}
 
 	{
-#line 35 "p1.l"
+#line 6 "program.l"
 
-#line 728 "lex.yy.c"
+#line 681 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -752,13 +705,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 40 )
+				if ( yy_current_state >= 29 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 62 );
+		while ( yy_base[yy_current_state] != 31 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -783,82 +736,97 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
-/* rule 1 can match eol */
 YY_RULE_SETUP
-#line 36 "p1.l"
-{row++;col=0;}
+#line 7 "program.l"
+{ yylval.str=strdup(yytext); return IF; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 37 "p1.l"
-{createToken("main",MAIN,row,col);col+=4;}
+#line 8 "program.l"
+{ yylval.str=strdup(yytext); return ELSE; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 38 "p1.l"
-{createToken(yytext,IF,row,col);col=col+2;}
+#line 9 "program.l"
+{yylval.str=strdup(yytext);  return '{'; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 39 "p1.l"
-{createToken(yytext,ELSE,row,col);col=col+4;}
+#line 10 "program.l"
+{yylval.str=strdup(yytext);  return '}'; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 40 "p1.l"
-{createToken("int",INT,row,col);col+=3;}
+#line 11 "program.l"
+{yylval.str=strdup(yytext); return '(';}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 41 "p1.l"
-{createToken("char",CHAR,row,col);col+=4;}
+#line 12 "program.l"
+{yylval.str=strdup(yytext); return ')';}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 42 "p1.l"
-{createToken(yytext,RELOP,row,col);col+=strlen(yytext);}
+#line 13 "program.l"
+{yylval.str=strdup(yytext);  return '+'; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 43 "p1.l"
-{createToken(yytext,ADDLOP,row,col);col++;}
+#line 14 "program.l"
+{yylval.str=strdup(yytext);  return '-'; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 44 "p1.l"
-{createToken(yytext,MUL,row,col);col++;}
+#line 15 "program.l"
+{yylval.str=strdup(yytext);  return '*'; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 45 "p1.l"
-{createToken(yytext,NUM,row,col);col+=strlen(yytext);}
+#line 16 "program.l"
+{yylval.str=strdup(yytext);  return '/'; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 46 "p1.l"
-{createToken(yytext,SPE,row,col);col+=1;}
+#line 17 "program.l"
+{yylval.str=strdup(yytext);  return '<'; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 47 "p1.l"
-{col++;}
+#line 18 "program.l"
+{yylval.str=strdup(yytext);  return '>'; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 48 "p1.l"
-{createToken(yytext,ID,row,col);col+=strlen(yytext);}
+#line 19 "program.l"
+{yylval.str=strdup(yytext);  return ID; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 50 "p1.l"
-{createToken(yytext,ID,row,col);col+=strlen(yytext);}
+#line 20 "program.l"
+{yylval.str=strdup(yytext);  return NUM; }
 	YY_BREAK
 case 15:
+/* rule 15 can match eol */
 YY_RULE_SETUP
-#line 51 "p1.l"
+#line 21 "program.l"
+{ return NL; }
+	YY_BREAK
+case 16:
+YY_RULE_SETUP
+#line 22 "program.l"
+{ /* skip whitespace */ }
+	YY_BREAK
+case 17:
+YY_RULE_SETUP
+#line 23 "program.l"
+{ /* ignore unrecognized characters */ }
+	YY_BREAK
+case 18:
+YY_RULE_SETUP
+#line 25 "program.l"
 ECHO;
 	YY_BREAK
-#line 861 "lex.yy.c"
+#line 829 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1155,7 +1123,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 40 )
+			if ( yy_current_state >= 29 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1183,11 +1151,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 40 )
+		if ( yy_current_state >= 29 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 39);
+	yy_is_jam = (yy_current_state == 28);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1863,211 +1831,9 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 51 "p1.l"
+#line 25 "program.l"
 
-void match(Token *t){
-    root=root->next;
+int yywrap() {
+    return 1;
 }
-void invalid(Token *t,char *error_message){
-    printf("Error: error in %d line\n%s\n",t->row,error_message);
-    exit(0);
-}
-void Program(){
-    if(root->type==MAIN){
-        match(root);
-        if(strcmp(root->lexemeName,"(")==0){
-            match(root);
-            if(strcmp(root->lexemeName,")")==0){
-                match(root);
-                if(strcmp(root->lexemeName,"{")==0){
-                    match(root);
-                    declarations();
-                    statementList();
-                    if(strcmp(root->lexemeName,"}")==0)
-                        return;
-                    else
-                        invalid(root,"} is not declared\n");
-                }
-                else invalid(root,"{ is not declared\n");
-            }
-            else invalid(root,") is not declared\n");
-        }
-        else invalid(root,"( is not declared\n");
-    }
-    else invalid(root,"main is not declared\n");
-}
-void declarations(){
-    if(root->type==CHAR||root->type==INT){
-        dataType();
-        identifierList();
-        if(strcmp(root->lexemeName,";")==0){
-            match(root);
-            declarations();
-        }
-        else invalid(root,"; is missing\n");
-    }
-    return;
-}
-void dataType(){
-    if(root->type==CHAR||root->type==INT)
-        match(root);
-}
-void identifierList(){
-    if(root->type==ID){
-        match(root);
-        if(strcmp(root->lexemeName,",")==0){
-            match(root);
-            identifierList();
-        }
-        else if(strcmp(root->lexemeName,"[")==0){
-            match(root);
-            if(root->type==NUM){
-                match(root);
-                if(strcmp(root->lexemeName,"]")==0){
-                    match(root);
-                    if(strcmp(root->lexemeName,",")==0){
-                        match(root);
-                        identifierList();
-                    }
-                    else return;
-                }
-                else invalid(root,"] is missing\n");
-            }
-            else invalid(root,"invalid array index\n");
-        }
-        else return;
-    }
-    else invalid(root,"error while decalring identifer \n");
-}
-void statementList(){
-    if(root->type==ID||root->type==IF){
-        statement();
-        statementList();
-    }
-    else return;
-}
-void statement(){
-    if(root->type==ID){
-        assignStat();
-        if(strcmp(root->lexemeName,";")==0)
-            match(root);
-            return;
-    }
-    else
-        decisionStat();
-}
-void assignStat(){
-    if(root->type==ID){
-        match(root);
-        if(strcmp(root->lexemeName,"=")==0){
-            match(root);
-            exp();
-        }
-        else invalid(root,"missing =\n");
-    }
-    else invalid(root,"wrong identifer\n");
-}
-void exp(){simpleExp();ePrime();}
-void ePrime(){
-    if(root->type==RELOP){
-        relop();
-        simpleExp();
-    }
-}
-void simpleExp(){term();sePrime();}
-void sePrime(){
-    if(root->type==ADDLOP){
-        addlop();
-        term();
-        sePrime();
-    }
-}
-void term(){factor();tPrime();}
-void tPrime(){
-    if(root->type==MUL){
-        mulop();
-        factor();
-        tPrime();
-    }
-}
-void factor(){
-    if(root->type==ID) match(root);
-    else if(root->type==NUM) match(root);
-    else invalid(root,"error while identifeer\n");
-}
-void relop(){
-    if(root->type==RELOP) match(root);
-    else invalid(root,"invalid in relop\n");
-}
-void addlop(){
-    if(root->type==ADDLOP) match(root);
-    else invalid(root,"invalid in addlop\n");
-}
-void mulop(){
-    if(root->type==MUL) match(root);
-    else invalid(root,"invalid in mullop\n");
-}
-void decisionStat(){
-    if(strcmp(root->lexemeName,"if")==0){
-        match(root);
-        if(strcmp(root->lexemeName,"(")==0){
-            match(root);
-            exp();
-            if(strcmp(root->lexemeName,")")==0){
-                match(root);
-                if(strcmp(root->lexemeName,"{")==0){
-                    match(root);
-                    statementList();
-                    if(strcmp(root->lexemeName,"}")==0){
-                        match(root);
-                        dprime();
-                    }
-                    else invalid(root,"missing }");
-                }
-                else invalid(root,"missing {");
-                
-            }
-            else invalid(root,"missing )");
-        }
-        else invalid(root,"missing (");
-    }
-    else invalid(root,"invlaid if statement\n");
-}
-void dprime(){
-    if(strcmp(root->lexemeName,"else")==0){
-        match(root);
-        if(strcmp(root->lexemeName,"{")==0){
-            match(root);
-            statementList();
-            if(strcmp(root->lexemeName,"}")==0){
-                match(root);
-            }else invalid(root,"} missing\n");
-        }else invalid(root,"{ missing\n");
-    }
-}
-int yywrap(){return 1;}
 
-void createToken(char *lexemeName,TokenType type,int row, int col){
-    Token *newToken=(Token*)malloc(sizeof(Token));
-    strcpy(newToken->lexemeName,lexemeName);
-    newToken->type=type;
-    newToken->row=row;
-    newToken->col=col;
-    newToken->next=NULL;
-    if(root==NULL)
-        root=newToken;
-    else{
-        Token*temp=root;
-        while(temp->next!=NULL)
-            temp=temp->next;
-        temp->next=newToken;
-    }
-}
-int main(){
-    yyin=fopen("c1.c","r");
-    yylex();
-    //createToken("main",MAIN,row,col);
-    createToken("END",END,row,col);
-    Program();
-    printf("No error Found\n");
-}
